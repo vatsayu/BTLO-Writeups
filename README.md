@@ -11,13 +11,13 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 ## Learning Path Overview
 
-| Phase | Focus Area                        | Status      |
-|-------|-----------------------------------|-------------|
+| Phase | Focus Area                              | Status      |
+|-------|-----------------------------------------|-------------|
 | 1     | Security Operations + Incident Response (Easy) | In Progress |
-| 2     | Digital Forensics (Easy)          | Upcoming    |
-| 3     | Reverse Engineering (Easy)        | Upcoming    |
-| 4     | Threat Intelligence + CTF Warm-up | Upcoming    |
-| 5     | Medium Challenges                 | Upcoming    |
+| 2     | Digital Forensics (Easy)                | Upcoming    |
+| 3     | Reverse Engineering (Easy)              | Upcoming    |
+| 4     | Threat Intelligence + CTF Warm-up       | Upcoming    |
+| 5     | Medium Challenges                       | In Progress |
 
 ---
 
@@ -25,14 +25,14 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 **Goal:** Build core SOC skills – phishing analysis, basic IR thinking, and report writing.
 
-| # | Challenge Name              | Category             | Difficulty | Status     | Write-up |
-|---|-----------------------------|----------------------|------------|------------|----------|
-| 1 | Phishing Analysis           | Security Operations  | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis/Phishing-Analysis.md) |
-| 2 | Phishing Analysis 2         | Security Operations  | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis-2/Phishing-Analysis-2.md) |
-| 3 | The Report                  | Security Operations  | Easy       | 🔜 Next     | - |
-| 4 | Follina                     | Incident Response    | Easy       | Pending    | - |
-| 5 | Secrets                     | Incident Response    | Easy       | Pending    | - |
-| 6 | ATT&CK                      | Incident Response    | Easy       | Pending    | - |
+| # | Challenge Name       | Category            | Difficulty | Status      | Write-up |
+|---|----------------------|---------------------|------------|-------------|----------|
+| 1 | Phishing Analysis    | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis/Phishing-Analysis.md) |
+| 2 | Phishing Analysis 2  | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis-2/Phishing-Analysis-2.md) |
+| 3 | The Report           | Security Operations | Easy       | ✅ Completed | [Write-up](./The-Report/The-Report.md) |
+| 4 | Follina              | Incident Response   | Easy       | 🔜 Next     | - |
+| 5 | Secrets              | Incident Response   | Easy       | Pending     | - |
+| 6 | ATT&CK               | Incident Response   | Easy       | Pending     | - |
 
 ---
 
@@ -40,11 +40,11 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 **Goal:** Learn basic forensic analysis of images, files, and insider activity.
 
-| # | Challenge Name     | Category          | Difficulty | Status  | Write-up |
-|---|--------------------|-------------------|------------|---------|----------|
-| 1 | Meta               | Digital Forensics | Easy       | Pending | - |
-| 2 | Spectrum           | Digital Forensics | Easy       | Pending | - |
-| 3 | Shiba Insider      | Digital Forensics | Easy       | Pending | - |
+| # | Challenge Name  | Category          | Difficulty | Status  | Write-up |
+|---|-----------------|-------------------|------------|---------|----------|
+| 1 | Meta            | Digital Forensics | Easy       | Pending | - |
+| 2 | Spectrum        | Digital Forensics | Easy       | Pending | - |
+| 3 | Shiba Insider   | Digital Forensics | Easy       | Pending | - |
 
 ---
 
@@ -74,18 +74,16 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 ## Phase 5 – Medium Challenges
 
-Only after finishing most Easy challenges.
-
-| # | Challenge Name                  | Category             | Difficulty | Status  | Write-up |
-|---|---------------------------------|----------------------|------------|---------|----------|
-| 1 | The Report II                   | Security Operations  | Medium     | Pending | - |
-| 2 | Bruteforce                      | Incident Response    | Medium     | Pending | - |
-| 3 | Log Analysis - Sysmon           | Security Operations  | Medium     | Pending | - |
-| 4 | Paranoid                        | Incident Response    | Medium     | Pending | - |
-| 5 | Network Analysis - Ransomware   | Security Operations  | Medium     | Pending | - |
-| 6 | Veriarty                        | Digital Forensics    | Medium     | Pending | - |
-| 7 | Source                          | Reverse Engineering  | Medium     | Pending | - |
-| 8 | Injection Series Part 3         | Reverse Engineering  | Medium     | Pending | - |
+| # | Challenge Name                | Category            | Difficulty | Status      | Write-up |
+|---|-------------------------------|---------------------|------------|-------------|----------|
+| 1 | The Report II                 | Security Operations | Medium     | ✅ Completed | [Write-up](./The-Report-II/The-Report-II.md) |
+| 2 | Bruteforce                    | Incident Response   | Medium     | Pending     | - |
+| 3 | Log Analysis - Sysmon         | Security Operations | Medium     | Pending     | - |
+| 4 | Paranoid                      | Incident Response   | Medium     | Pending     | - |
+| 5 | Network Analysis - Ransomware | Security Operations | Medium     | Pending     | - |
+| 6 | Veriarty                      | Digital Forensics   | Medium     | Pending     | - |
+| 7 | Source                        | Reverse Engineering | Medium     | Pending     | - |
+| 8 | Injection Series Part 3       | Reverse Engineering | Medium     | Pending     | - |
 
 ---
 
@@ -98,16 +96,18 @@ Only after finishing most Easy challenges.
 - **Autopsy / FTK Imager** – Disk forensics
 - **Text Editor** (VS Code / Notepad++)
 - **URL2PNG / Browserling** – Safe webpage viewing
+- **PDF Reader** – Report analysis
 
 ---
 
 ## Progress Summary
 
-- **Completed:** 2 Challenges
-- **Current Focus:** Phase 1 (Security Operations & Incident Response)
-- **Next Challenge:** The Report
+- **Completed:** 4 Challenges
+- **Current Focus:** Phase 1 (Easy IR challenges) + continuing Phase 5
+- **Next Challenge:** Follina
 
 ---
 
 **Note:** All write-ups are based on free-tier BTLO challenges only.  
-I focus on understanding the investigation process, not just submitting flags.
+I focus on understanding the investigation process, not just submitting flags.  
+**Original challenge files are never uploaded** — only write-ups.
