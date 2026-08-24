@@ -30,7 +30,7 @@ I am following a structured phase-based approach to build strong fundamentals.
 | 1 | Phishing Analysis    | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis/Phishing-Analysis.md) |
 | 2 | Phishing Analysis 2  | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis-2/Phishing-Analysis-2.md) |
 | 3 | The Report           | Security Operations | Easy       | ✅ Completed | [Write-up](./The-Report/The-Report.md) |
-| 4 | Follina              | Incident Response   | Easy       | 🔜 Next     | - |
+| 4 | Follina              | Incident Response   | Easy       |    Completed | - |
 | 5 | Secrets              | Incident Response   | Easy       | Pending     | - |
 | 6 | ATT&CK               | Incident Response   | Easy       | Pending     | - |
 

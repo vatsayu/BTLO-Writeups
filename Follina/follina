@@ -1,0 +1,137 @@
+# BTLO – Follina
+
+**Platform:** Blue Team Labs Online (BTLO)  
+**Category:** Incident Response  
+**Difficulty:** Easy  
+**Points:** 10  
+**Status:** ✅ Completed  
+**Date:** August 2026  
+
+---
+
+## Scenario
+
+On a Friday evening when you were in a mood to celebrate your weekend, your team was alerted with a new RCE vulnerability actively being exploited in the wild. You have been tasked with analyzing and researching the sample to collect information for the weekend team.
+
+**Sample:** `sample.doc` (malicious Microsoft Word document)
+
+---
+
+## Tools Used
+
+- `sha1sum` / file hashing
+- VirusTotal
+- Unzip / text search (`.docx` is a ZIP archive)
+- OSINT (Huntress reports, public Follina analysis)
+- MITRE ATT&CK reference
+
+---
+
+## Investigation & Answers
+
+### Question 1
+**What is the SHA1 hash value of the sample?**  
+(Format: SHA1Hash)
+
+```bash
+sha1sum sample.doc
+
+
+Answer: 06727ffda60359236a8029e0b3e8a0fd11c23313
+
+Question 2
+According to VirusTotal, what is the full filetype of the provided sample?
+
+(Format: X X X X)
+
+Uploaded the sample / searched the SHA1 on VirusTotal
+Checked the Details tab → File type
+
+Answer: Office Open XML Document
+
+Question 3
+Extract the URL that is used within the sample and submit it
+
+(Format: https://x.domain.tld/path/to/something)
+
+A .doc/.docx file is a ZIP container
+Extracted the archive and searched for external references
+Found the malicious external link inside the relationships file
+
+Answer: https://www.xmlformats.com/office/word/2022/wordprocessingDrawing/RDF842l.html
+
+Question 4
+What is the name of the XML file that is storing the extracted URL?
+
+(Format: file.name.ext)
+
+Located under word/_rels/
+This relationships file points Word to the external HTML payload
+
+Answer: document.xml.rels
+
+Question 5
+The extracted URL accesses a HTML file that triggers the vulnerability to execute a malicious payload. According to the HTML processing functions, any files with fewer than  bytes would not invoke the payload. Submit the 
+
+(Format: Number of Bytes)
+
+From public analysis of the Follina exploit (Huntress / researchers)
+The HTML handler requires a minimum size before the payload is invoked
+
+Answer: 4096
+
+Question 6
+After execution, the sample will try to kill a process if it is already running. What is the name of this process?
+
+(Format: filename.ext)
+
+The malicious PowerShell / command payload contains a taskkill against the MSDT process
+This is done to clean up or avoid interference after exploitation
+
+Answer: msdt.exe
+
+Question 7
+You were asked to write a process-based detection rule using Windows Event ID 4688. What would be the ProcessName and ParentProcessname used in this detection rule?
+
+[Hint: OSINT time!]
+
+(Format: ProcessName, ParentProcessName)
+
+Follina is triggered when Microsoft Word (winword.exe) launches the Microsoft Support Diagnostic Tool (msdt.exe)
+Event ID 4688 (process creation) can be used to detect this parent-child relationship
+
+Answer: msdt.exe, winword.exe
+
+Question 8
+Submit the MITRE technique ID used by the sample for Execution
+
+[Hint: Online sandbox platforms can help!]
+
+(Format: TXXXX)
+
+The sample executes commands via the MSDT / PowerShell chain
+Primary execution technique observed: Command and Scripting Interpreter
+
+Answer: T1059
+
+Question 9
+Submit the CVE associated with the vulnerability that is being exploited
+
+(Format: CVE-XXXX-XXXXX)
+
+The vulnerability is publicly known as Follina
+Confirmed on VirusTotal tags and public advisories
+
+Answer: CVE-2022-30190
+
+
+Key Takeaways
+
+Follina (CVE-2022-30190) abuses the Microsoft Support Diagnostic Tool (msdt.exe) via a malicious Word document.
+No macro is required – the exploit uses an external HTML reference.
+Simple parent-child process monitoring (winword.exe → msdt.exe) is an effective detection method.
+Always analyse Office documents as ZIP archives to inspect relationships and external links.
+VirusTotal + public research reports are enough to fully solve this Easy IR challenge.
+
+
+
