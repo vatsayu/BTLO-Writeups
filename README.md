@@ -13,8 +13,8 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 | Phase | Focus Area                              | Status      |
 |-------|-----------------------------------------|-------------|
-| 1     | Security Operations + Incident Response (Easy) | In Progress |
-| 2     | Digital Forensics (Easy)                | Upcoming    |
+| 1     | Security Operations + Incident Response (Easy) | ✅ Completed |
+| 2     | Digital Forensics (Easy)                | In Progress |
 | 3     | Reverse Engineering (Easy)              | Upcoming    |
 | 4     | Threat Intelligence + CTF Warm-up       | Upcoming    |
 | 5     | Medium Challenges                       | In Progress |
@@ -27,12 +27,12 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 | # | Challenge Name       | Category            | Difficulty | Status      | Write-up |
 |---|----------------------|---------------------|------------|-------------|----------|
-| 1 | Phishing Analysis    | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis/Phishing-Analysis.md) |
-| 2 | Phishing Analysis 2  | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis-2/Phishing-Analysis-2.md) |
-| 3 | The Report           | Security Operations | Easy       | ✅ Completed | [Write-up](./The-Report/The-Report.md) |
-| 4 | Follina              | Incident Response   | Easy       |    Completed | - |
-| 5 | Secrets              | Incident Response   | Easy       | Pending     | - |
-| 6 | ATT&CK               | Incident Response   | Easy       | Pending     | - |
+| 1 | Phishing Analysis    | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis.md) |
+| 2 | Phishing Analysis 2  | Security Operations | Easy       | ✅ Completed | [Write-up](./Phishing-Analysis-2.md) |
+| 3 | The Report           | Security Operations | Easy       | ✅ Completed | [Write-up](./The-Report.md) |
+| 4 | Follina              | Incident Response   | Easy       | ✅ Completed | [Write-up](./Follina.md) |
+| 5 | Secrets              | Incident Response   | Easy       | ✅ Completed | [Write-up](./Secrets.md) |
+| 6 | ATT&CK               | Incident Response   | Easy       | ✅ Completed | [Write-up](./ATT&CK.md) |
 
 ---
 
@@ -40,11 +40,11 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 **Goal:** Learn basic forensic analysis of images, files, and insider activity.
 
-| # | Challenge Name  | Category          | Difficulty | Status  | Write-up |
-|---|-----------------|-------------------|------------|---------|----------|
-| 1 | Meta            | Digital Forensics | Easy       | Pending | - |
-| 2 | Spectrum        | Digital Forensics | Easy       | Pending | - |
-| 3 | Shiba Insider   | Digital Forensics | Easy       | Pending | - |
+| # | Challenge Name  | Category          | Difficulty | Status      | Write-up |
+|---|-----------------|-------------------|------------|-------------|----------|
+| 1 | Meta            | Digital Forensics | Easy       | ✅ Completed | [Write-up](./Meta.md) |
+| 2 | Spectrum        | Digital Forensics | Easy       | 🔜 Next     | - |
+| 3 | Shiba Insider   | Digital Forensics | Easy       | Pending     | - |
 
 ---
 
@@ -76,7 +76,7 @@ I am following a structured phase-based approach to build strong fundamentals.
 
 | # | Challenge Name                | Category            | Difficulty | Status      | Write-up |
 |---|-------------------------------|---------------------|------------|-------------|----------|
-| 1 | The Report II                 | Security Operations | Medium     | ✅ Completed | [Write-up](./The-Report-II/The-Report-II.md) |
+| 1 | The Report II                 | Security Operations | Medium     | ✅ Completed | [Write-up](./The-Report-II.md) |
 | 2 | Bruteforce                    | Incident Response   | Medium     | Pending     | - |
 | 3 | Log Analysis - Sysmon         | Security Operations | Medium     | Pending     | - |
 | 4 | Paranoid                      | Incident Response   | Medium     | Pending     | - |
@@ -94,20 +94,28 @@ I am following a structured phase-based approach to build strong fundamentals.
 - **Wireshark** – Network analysis
 - **Volatility** – Memory forensics
 - **Autopsy / FTK Imager** – Disk forensics
+- **exiftool** – Image metadata analysis
+- **Hashcat** – Password / JWT cracking
 - **Text Editor** (VS Code / Notepad++)
 - **URL2PNG / Browserling** – Safe webpage viewing
 - **PDF Reader** – Report analysis
+- **Google Images / Google Lens** – Reverse image search
 
 ---
 
 ## Progress Summary
 
-- **Completed:** 4 Challenges
-- **Current Focus:** Phase 1 (Easy IR challenges) + continuing Phase 5
-- **Next Challenge:** Follina
+- **Completed:** 8 Challenges
+- **Current Focus:** Phase 2 (Digital Forensics) + continuing Phase 5
+- **Next Challenge:** Spectrum
 
 ---
 
 **Note:** All write-ups are based on free-tier BTLO challenges only.  
 I focus on understanding the investigation process, not just submitting flags.  
 **Original challenge files are never uploaded** — only write-ups.
+
+
+
+
+
